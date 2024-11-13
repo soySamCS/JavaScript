@@ -101,7 +101,7 @@ for(const color of colores){
 //Ejercicio
 
 let array = [];
-let cantidad = prompt("Dime cuantos dulces, tiene qe ser la menos uno";{
+let cantidad = prompt("Dime cuantos dulces, tiene que ser la menos uno");{
     for (let i = 1; i <= cantidad; i++);
     array.push(prompt("Pon los dulces que quieres"));
 }
