@@ -43,25 +43,28 @@ class arma {
     }
 
     describir(){
-        console.log(`Arma: ${this.nombre} | Tipo: ${this.tipo} | Daño: ${this.daño}`)
+        console.log(`Arma: ${this.nombre} | Tipo: ${this.tipo} | Daño: ${this.daño}`);
     }
 }
 
 let arma1 = new arma("Frostmourne", "Espada", 9999999)
 let arma2 = new arma("Martillo del alba", "Martillo", 8999)
-let amra3 = new arma("Espadad de energía", "Arma alien", 44222)
+let arma3 = new arma("Espadad de energía", "Arma alien", 44222)
 let arma4 = new arma("Magnum", "Pistola", 42)
 
 let arsenal = {
     armas: [],
 
     agregarArma : function(arma) {
-        this.arma = (arma);
+        this.armas.push(arma);
     }
 }
 
-arsenal.agregarArma(arma1, arma2, amra3, arma4);
+arsenal.agregarArma(arma1);
+arsenal.agregarArma(arma2);
+arsenal.agregarArma(arma3);
+arsenal.agregarArma(arma4);
 
 for (let i = 0; i < arsenal.armas.length; i++){
-    console.log(arsenal.armas)
+    arsenal.armas[i].describir();
 }
